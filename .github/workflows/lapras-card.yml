@@ -2,8 +2,9 @@ name: LAPRAS Card
 
 on:
   workflow_dispatch:
+  # 週1回月曜日更新
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * 1"
 
 jobs:
   update-card:
